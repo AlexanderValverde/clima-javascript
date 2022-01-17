@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="shortcut icon" href="./img/cloud-sun.svg" type="image/x-icon">
+    <title>Clima</title>
+</head>
+<body class="main">
+    <div class="container">
+        <div class="content">
+            <div class="content-title">
+                <h1 class="title">Consulta el Clima</h1>
+            </div>
+            <div class="data__container">
+                <div class="data-text" id="resultClima">
+                    <img class=".img" src="./img/cloudy-day.png" alt="Clima">
+                    <p>Escribe tu ciudad y país, para mostrar el resultado climático.</p>
+                </div>
+                <div class="data-form">
+                    <form class="formulario" id="form" action="#" method="post">
+                        <div class="content-input">
+                            <input type="text" name="ciudad" id="ciudad" placeholder="¿Cuál es tu ciudad?">
+                        </div>
+                        <div class="content-combo">
+                            <select name="pais" id="pais">
+                                <option disabled selected value="">-- Selecciona tu país --</option>
+                                <option value="AR">Argentina</option>
+                                <option value="US">estados Unidos</option>
+                                <option value="PE">Perú</option>
+                            </select>
+                        </div>
+                        <button class="btnClima" type="submit">Obtener Clima</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
